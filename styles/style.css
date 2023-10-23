@@ -9,13 +9,13 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;
+  block-size: 100%;
 }
 
 h1,
@@ -35,4 +35,132 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  max-width: 1140px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+
+
+.content__list {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-height: 298px;
+  overflow-x: auto;
+}
+
+.content__details{
+  width: 100%;
+  height: 100%;
+}
+
+.result{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result__video-container{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 711px;
+  height: 386px;
+}
+
+.result__video{
+  width: 100%;
+  height: 100%;
+}
+
+
+.content__video-card{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.content__video-card-thumbnail{
+  width: 194px;
+  height: 103px;
+}
+
+.content__video-card-description-container{
+  width: 100%;
+}
+
+.title{
+  color: #FFF;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 75px;
+  font-style: normal;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent{
+  color: #545050;
+}
+
+.content__video-card-title{
+  color: #FFF;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 100%; 
+  text-transform: uppercase;
+}
+
+.content__video-card-description{
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 16.2px; 
+}
+
+.search-form__fieldset-title{
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.content__card-link{
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.fieldset{
+  border: none;
 }
