@@ -65,7 +65,7 @@ ol {
   left: 0px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 30px;
   max-height: 298px;
   overflow-x: auto;
 }
@@ -100,8 +100,9 @@ ol {
 
 
 .content__video-card{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   align-items: start;
 }
 
@@ -200,6 +201,13 @@ ol {
   color: #FFF;
   background-color: transparent;
   cursor: pointer;
+  color: #FFF;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .search-form__submit-button{
