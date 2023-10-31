@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: flex-end;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -41,7 +43,7 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 30px;
   max-width: 1140px;
 }
