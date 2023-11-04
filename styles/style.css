@@ -10,8 +10,8 @@ html {
 
 .page {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -68,6 +68,7 @@ ol {
   gap: 30px;
   max-height: 298px;
   overflow-x: auto;
+  padding: 3px;
 }
 
 .content__details{
@@ -130,6 +131,8 @@ ol {
 }
 
 .content__video-card-title{
+  width: 190px;
+  overflow: hidden;
   color: #FFF;
   font-family: Oswald;
   font-weight: 700;
@@ -137,6 +140,8 @@ ol {
   font-style: normal;
   line-height: 100%; 
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description{
@@ -174,6 +179,7 @@ ol {
 .search-form__checkbox-list{
   display: flex;
   gap: 15px;
+  padding: 5px;
 }
 
 .content__card-link{
@@ -199,19 +205,39 @@ ol {
   height: 34px;
   border: 1px solid #FFF;
   color: #FFF;
-  background-color: transparent;
-  cursor: pointer;
   color: #FFF;
-  text-align: center;
   font-family: Fira Sans Condensed;
+  font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .search-form__submit-button{
   width: 194px;
+}
+
+.button:hover{
+  text-decoration: underline;
+}
+
+li:hover{
+  text-decoration: underline;
+   text-decoration-skip-ink: none;
+}
+
+.content__video-card-description-container{
+  display: grid;
+  gap: 6px;
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px; 
 }
 
 .more-button{
@@ -237,10 +263,21 @@ ol {
   appearance: none;
 }
 
+input[type="text"]:focus{
+  color:#fff ;
+}
+
+.search-form__label:has(.search-form__checkbox):hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
  .search-form__pseudo-checkbox{
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width:19px;
   height:19px;
   border: 1px solid #FFF;
@@ -248,15 +285,49 @@ ol {
 }
 
 input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
-  display: block;
   content: "";
+  display: block;
   width: 15px;
   height: 15px;
   background-color: #fff;
  }
 
- .content__video-card:focus{
-  outline: none;
+ .content__video-card:focus-visible{
   border: 1px solid #fff;
+  outline: none;
  }
 
+.button:focus-visible{
+  outline: none;
+}
+
+ .button:focus-visible{
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+ }
+
+
+ input:focus-visible{
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+ }
+ 
+
+ label:focus-visible{
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+ }
+ label:focus{
+  outline:none;
+ }
+
+ li:focus-visible{
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+ }
+
+ input:active{
+  outline: 1px solid #fff;
+ }
+
+ 
