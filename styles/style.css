@@ -179,7 +179,6 @@ ol {
 .search-form__checkbox-list{
   display: flex;
   gap: 15px;
-  padding: 5px;
 }
 
 .content__card-link{
