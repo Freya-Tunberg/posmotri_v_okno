@@ -184,7 +184,7 @@ ol {
   gap: 30px;
   max-height: 298px;
   overflow-x: auto;
-}
+}с
 
 .content__video-card {
   display: grid;
@@ -249,6 +249,22 @@ ol {
   white-space: nowrap;
 }
 
+.search-form__textfield:active {
+  outline: 1px solid #fff;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
 .button:hover {
   text-decoration: underline;
 }
@@ -308,14 +324,4 @@ label:focus-visible {
   outline-offset: 2px;
 }
 
-.search-form__textfield:active {
-  outline: 1px solid #fff;
-}
 
-.button:active {
-  background-color: #545050;
-}
-
-.content__card-link_current {
-  background-color: #545050;
-}
