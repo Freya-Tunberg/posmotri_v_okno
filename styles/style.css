@@ -120,6 +120,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
+  margin-bottom: 5px;
 }
 
 .search-form__pseudo-checkbox {
@@ -199,7 +200,7 @@ ol {
   margin-bottom: 30px;
 }
 
-.content__video-card:not(:last-child){
+.content__video-card:not(:last-child) {
   margin-bottom: 0px;
 }
 
