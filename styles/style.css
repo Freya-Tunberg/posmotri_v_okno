@@ -261,6 +261,8 @@ ol {
 }
 
 .search-form__textfield:active {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   outline: 1px solid #fff;
 }
 
@@ -288,10 +290,6 @@ ol {
 .search-form__label:has(.search-form__checkbox):hover {
   text-decoration: underline;
   cursor: pointer;
-}
-
-.search-form__textfield:focus {
-  color: #fff;
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
